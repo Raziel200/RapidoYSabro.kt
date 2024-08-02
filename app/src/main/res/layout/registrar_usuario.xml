@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Registrar_usuario"
+    android:background="@mipmap/fondoprincipal">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="147dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="456dp"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+
+        android:text="Rapido y Sabroso"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <TextView
+        android:id="@+id/inscribirseBtn"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:text="Inscribirse"
+        android:textColor="#FFF9FB"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/editText4"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:background="@drawable/color_nombre"
+        android:drawablePadding="13dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="Nombre"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/inscribirseBtn"
+        android:drawableLeft="@drawable/btn_4" />
+
+    <EditText
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/editText5"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:background="@drawable/color_nombre"
+
+        android:drawablePadding="13dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="Correo electrónico o teléfono"
+
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="0.034"
+        android:drawableLeft="@drawable/btn_4"/>
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/editText6"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/color_nombre"
+        android:drawablePadding="13dp"
+
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/editText5"
+        android:drawableLeft="@drawable/bottom_btn4"/>
+
+    <TextView
+        android:id="@+id/inscribirse"
+        android:layout_width="363dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/color_inscribirse"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:onClick="MenuActivity"
+        android:text="Inscribirse"
+        android:textColor="#FFF9FB"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <TextView
+        android:id="@+id/ya_registrado"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:text="¿Ya estas registrado?"
+        android:textColor="#FFF9FB"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/inscribirse"
+        app:layout_constraintTop_toBottomOf="@+id/inscribirse" />
+
+    <TextView
+        android:id="@+id/ya_inicia_sesion"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:onClick="Iniciar_secion"
+        android:text="Iniciar Seción"
+        android:textColor="#E9712D"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/inscribirse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ya_registrado"
+        app:layout_constraintTop_toBottomOf="@+id/inscribirse" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

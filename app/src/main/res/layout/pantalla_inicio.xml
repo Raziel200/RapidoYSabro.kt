@@ -1,0 +1,97 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrimerPantallaActivity"
+    android:padding="10dp"
+    android:background="@mipmap/fondoprincipal">
+
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="342dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/almendra_sc"
+        android:text="Tu Comida Favorita En Minutos"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageTwo"
+        android:layout_width="338dp"
+        android:layout_height="367dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOne"
+        app:srcCompat="@mipmap/fondochef" />
+
+    <TextView
+        android:id="@+id/textTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="Rápido y Sabroso"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageTwo" />
+
+    <TextView
+        android:id="@+id/textTree"
+        android:layout_width="366dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="center"
+        android:text="Explora un mundo de sabores desde tu dispositivo móvil"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTwo" />
+
+
+    <TextView
+        android:id="@+id/inscribirseBtn"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/color_inscribirse"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:onClick="registrar"
+        android:text="Inscribirse"
+        android:textColor="#FFF9FB"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/accesoBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTree" />
+
+    <TextView
+        android:id="@+id/accesoBtn"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/color_inscribirse"
+        android:fontFamily="@font/anton"
+        android:gravity="center"
+        android:onClick="Iniciar_secion"
+        android:text="Acceso"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inscribirseBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textTree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
